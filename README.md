@@ -1,4 +1,4 @@
-# Luke's build of st - the simple (suckless) terminal
+# Fedor's fork of Luke's build of st - the simple (suckless) terminal
 
 The [suckless terminal (st)](https://st.suckless.org/) with some additional
 features that make it literally the best terminal emulator ever:
@@ -15,8 +15,7 @@ features that make it literally the best terminal emulator ever:
   mouse.
 + OR **vim-bindings**: scroll up/down in history with `alt-k` and `alt-j`.
   Faster with `alt-u`/`alt-d`.
-+ **zoom/change font size**: same bindings as above, but holding down shift as
-  well. `alt-home` returns to default
++ **zoom/change font size**: `alt+=` and `alt+-` 
 + **copy text** with `alt-c`, **paste** is `alt-v` or `shift-insert`
 
 ## Pretty stuff
@@ -33,6 +32,7 @@ features that make it literally the best terminal emulator ever:
 + Ligatures
 + font2
 + updated to latest version 0.8.4
++ w3m patch to support images preview in ranger
 
 ## Installation for newbs
 
@@ -44,7 +44,7 @@ cd st
 sudo make install
 ```
 
-Obviously, `make` is required to build. `fontconfig` is required for the
+Obviously, `make` and `gcc` is required to build. `fontconfig` is required for the
 default build, since it asks `fontconfig` for your system monospace font. It
 might be obvious, but `libX11` and `libXft` are required as well. Chances are,
 you have all of this installed already.
